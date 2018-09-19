@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px) 1fr repeat(4, 80px);
+    grid-template-rows: 1fr;
+    height: 100vh;
+    width: 100%;
+  }
+
+.page {
+    grid-row: 1 / 2;
+}
+
+.page:nth-child(1):before {
+    content: "about";
+    color: white;
+    position: absolute;
+    transform: rotate(-90deg);
+    font-family: quicksand;
+    font-size: 30px;
+    bottom: 50%;
+    opacity: 0;
+    animation: appear 5s forwards 2s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+         opacity: 1;
+    }
+}
+
+.container .page:nth-child(1) {
+    grid-column: 1/ 7;
+    z-index: 4;
+    background-image: url("./assets/backgrounds/background-about.svg");
+    background-size: 100%;
+}
+
+.container .page:nth-child(2) {
+    grid-column: 1 / 8;
+    z-index: 3;
+    background-image: url("./assets/backgrounds/background-portfolio.svg");
+    background-size: 100%;
+}
+
+.container .page:nth-child(3) {
+    grid-column: 1 / 9;
+    background: yellow;
+    z-index: 2;
+}
+
+.container .page:nth-child(4) {
+    grid-column: 1 / 10;
+    background: bisque;
+    z-index: 1;
+}
+
+.container .page:nth-child(2):hover {
+    grid-column: 2 / 8;
+    z-index: 5;
+}
+
+.container .page:nth-child(3):hover {
+    grid-column: 2 / 9;
+    z-index: 5;
+}
+
+.container .page:nth-child(4):hover {
+    grid-column: 2 / 10;
+    z-index: 5;
+}
+
+/* .container .about {
+    
+    background-size: 100%;
+} */
