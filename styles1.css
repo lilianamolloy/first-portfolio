@@ -1,77 +1,92 @@
 body {
     margin: 0;
-}
-.contact {
-    position: absolute;
-    z-index: 1;
-    image: url("/assets/backgrounds/background-contact.svg");
-    width: 1220px;
+  }
+  
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 40px) 1fr repeat(4, 40px);
+    grid-template-rows: 1fr;
     height: 100vh;
-    right: 0px;
-    background-color: lime;
-    background-repeat: no-repeat;
-    transition: width 2s;
-}
-
-.resume {
+    width: 100%;
+    background:;
+  }
+  
+  .page {
+    background: ;
+    grid-row: 1 / 2;
+  /*   transition: width 10s; */
+  }
+  
+  .page p {
+    max-width: 30em;
+    margin-left: 3em;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+  }
+  
+  .page:nth-child(1):before {
+    content: "back";
+    color: white;
     position: absolute;
-    z-index: 2;
+    transform: rotate(-90deg);
+    font-family: helvetica;
+    bottom: 50%;
+    opacity: 0;
+    animation: appear 5s forwards 2s;
+  }
+  
+  @keyframes appear {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+         opacity: 1;
+    }
+  }
+  
+  .page:nth-child(1) {
+    grid-column: 1/ 7;
     background-image: url("/assets/backgrounds/background-about.svg");
-    width: 1220px;
-    height: 100vh;
-    right: 80px;
-    background-color: pink;
+    background-size: 100%;
     background-repeat: no-repeat;
-    transition: width 2s;
-}
-
-.portfolio {
-    position: absolute;
-    z-index: 3;
-    background-image: url("/assets/backgrounds/background-portfolio.svg");
-    width: 1220px;
-    height: 100vh;
-    background-color: hotpink;
-    right: 160px;
-    background-repeat: no-repeat;
-    transition: width 2s;
-}
-
-.about {
-    position: absolute;
     z-index: 4;
-    background-image: url("/assets/backgrounds/background-about.svg");
-    width: 1220px;
-    height: 100vh;
-    background-color: blue;
-    right: 240px;
+  }
+  
+  .page:nth-child(2) {
+    grid-column: 2 / 8;
+    background-image: url("/assets/backgrounds/background-portfolio.svg");
+    background-size: 100%;
     background-repeat: no-repeat;
-    transition: width 2s;
-}
-
-.container .page:nth-child(1):hover ~ .page {
-    width: 0px; 
-    left: 0;
-}
-
-.container .page:nth-child(1):hover {
-    width: 1440px;
-}
-
-.container .page:nth-child(2):hover ~ .page {
-    width: 0px;
-    left: 0;
-}
-
-.container .page:nth-child(2):hover {
-    width: 1380px;
-}
-
-.container .page:nth-child(3):hover ~ .page {
-    width: 00px;
-    left:0;
-}
-
-.container .page:nth-child(3):hover {
-    width: 1300px
-} 
+    z-index: 3;
+  }
+  
+  .page:nth-child(3) {
+    grid-column: 3 / 9;
+    background-image: url("/assets/backgrounds/background-about.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  
+  .page:nth-child(4) {
+    grid-column: 4 / 10;
+    background-image: url("/assets/backgrounds/background-contact.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  
+  .page:nth-child(2):hover {
+    z-index: 5;
+  }
+  
+  .page:nth-child(3):hover {
+    z-index: 5;
+  }
+  
+  .page:nth-child(4):hover {
+    z-index: 5;
+  }
+  
