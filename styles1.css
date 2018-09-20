@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+.contact {
+    position: absolute;
+    z-index: 1;
+    image: url("/assets/backgrounds/background-contact.svg");
+    width: 1220px;
+    height: 100vh;
+    right: 0px;
+    background-color: lime;
+    background-repeat: no-repeat;
+    transition: width 2s;
+}
+
+.resume {
+    position: absolute;
+    z-index: 2;
+    background-image: url("/assets/backgrounds/background-about.svg");
+    width: 1220px;
+    height: 100vh;
+    right: 80px;
+    background-color: pink;
+    background-repeat: no-repeat;
+    transition: width 2s;
+}
+
+.portfolio {
+    position: absolute;
+    z-index: 3;
+    background-image: url("/assets/backgrounds/background-portfolio.svg");
+    width: 1220px;
+    height: 100vh;
+    background-color: hotpink;
+    right: 160px;
+    background-repeat: no-repeat;
+    transition: width 2s;
+}
+
+.about {
+    position: absolute;
+    z-index: 4;
+    background-image: url("/assets/backgrounds/background-about.svg");
+    width: 1220px;
+    height: 100vh;
+    background-color: blue;
+    right: 240px;
+    background-repeat: no-repeat;
+    transition: width 2s;
+}
+
+.container .page:nth-child(1):hover ~ .page {
+    width: 0px; 
+    left: 0;
+}
+
+.container .page:nth-child(1):hover {
+    width: 1440px;
+}
+
+.container .page:nth-child(2):hover ~ .page {
+    width: 0px;
+    left: 0;
+}
+
+.container .page:nth-child(2):hover {
+    width: 1380px;
+}
+
+.container .page:nth-child(3):hover ~ .page {
+    width: 00px;
+    left:0;
+}
+
+.container .page:nth-child(3):hover {
+    width: 1300px
+} 
