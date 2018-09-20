@@ -14,8 +14,8 @@ body {
     grid-row: 1 / 2;
 }
 
-.page:nth-child(1):before {
-    content: "about";
+.page:nth-child(4):before {
+    content: "home";
     color: white;
     position: absolute;
     transform: rotate(-90deg);
@@ -37,10 +37,44 @@ body {
 }
 
 .container .page:nth-child(1) {
+    grid-column: 1 / 10;
+    z-index: 1;
+    background-image: url("./assets/backgrounds/background-contact.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container .page:nth-child(2) {
+    grid-column: 1 / 9;
+    z-index: 2;
+    background-image: url("./assets/backgrounds/background-about.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container .page:nth-child(3) {
+    grid-column: 1 / 8;
+    z-index: 3;
+    background-image: url("./assets/backgrounds/background-portfolio.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container .page:nth-child(4) {
     grid-column: 1/ 7;
     z-index: 4;
     background-image: url("./assets/backgrounds/background-about.svg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    transition: width 2s;
+}
+
+/* .container .page:nth-child(1) {
+    grid-column: 1/ 7;
+    z-index: 4;
+    background-image: url("./assets/backgrounds/background-about.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .container .page:nth-child(2) {
@@ -52,17 +86,19 @@ body {
 
 .container .page:nth-child(3) {
     grid-column: 1 / 9;
-    background: yellow;
     z-index: 2;
+    background-image: url("./assets/backgrounds/background-about.svg");
+    background-size: 100%;
 }
 
 .container .page:nth-child(4) {
     grid-column: 1 / 10;
-    background: bisque;
     z-index: 1;
-}
+    background-image: url("./assets/backgrounds/background-contact.svg");
+    background-size: 100%;
+} */
 
-.container .page:nth-child(2):hover {
+/* .container .page:nth-child(2):hover {
     grid-column: 2 / 8;
     z-index: 5;
 }
@@ -75,9 +111,36 @@ body {
 .container .page:nth-child(4):hover {
     grid-column: 2 / 10;
     z-index: 5;
+} */
+
+.container .page:nth-child(1):hover ~ .page {
+    width: 0px;
+    background: #e5e5e5;
 }
 
-/* .container .about {
-    
-    background-size: 100%;
-} */
+.container .page:nth-child(1):hover {
+    /* grid-column: 2 / 10; */
+}
+
+.container .page:nth-child(2):hover ~ .page {
+    width: 0px;
+    background: #e5e5e5;
+}
+
+.container .page:nth-child(2):hover {
+    /* grid-column: 2 / 9; */
+}
+
+.container .page:nth-child(3):hover ~ .page {
+    width: 0px;
+    background: #e5e5e5;
+}
+
+.container .page:nth-child(3):hover {
+    /* grid-column: 2 / 8; */
+} 
+
+@keyframe slide {
+    0% {width: 100%;}
+    100% {width: 0px;}
+}
