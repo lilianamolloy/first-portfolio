@@ -137,3 +137,54 @@ button{
 }
 
 
+/* resume tab */
+.page:nth-child(1) .tab {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.page:nth-child(1) h2 {
+    transform: rotate(-90deg);
+    width: 100px;
+    font-size: 16px;
+    color:#F6DBCD;
+    margin-top: 100px;
+
+}
+
+/* portfolio tab */
+.page:nth-child(2) .tab {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.page:nth-child(2) h2 {
+    transform: rotate(-90deg);
+    width: 100px;
+    font-size: 16px;
+    color:#D6A892;
+    margin-top: 100px;
+
+}
+
+/* about tab */
+.page:nth-child(3) .tab {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.page:nth-child(3) h2 {
+    transform: rotate(-90deg);
+    width: 100px;
+    font-size: 16px;
+    color:#F6DBCD;
+    margin-top: 100px;
+
+}
+
+.tab a {
+    text-decoration: none;
+}
