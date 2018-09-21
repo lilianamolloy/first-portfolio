@@ -16,29 +16,6 @@ body {
     grid-row: 1 / 2;
 }
 
-/* home directory */
-.page:nth-child(4):before {
-    content: "home";
-    color: #F6DBCD;
-    position: absolute;
-    transform: rotate(-90deg);
-    font-family: quicksand;
-    font-size: 30px;
-    bottom: 50%;
-    opacity: 0;
-    animation: appear 5s forwards 2s;
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    
-    to {
-         opacity: 1;
-    }
-}
-
 /* background pages  */
 .container .page:nth-child(1) {
     grid-column: 1 / 10;
@@ -49,10 +26,12 @@ body {
     background-repeat: no-repeat;
 }
 
+
+/* background resume */
 .container .page:nth-child(2) {
     grid-column: 1 / 9;
     z-index: 2;
-    background-image: url("/assets/backgrounds/background-about.svg");
+    /* background-image: url("/assets/backgrounds/background-about.svg"); */
     background-size: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -61,16 +40,18 @@ body {
 .container .page:nth-child(3) {
     grid-column: 1 / 8;
     z-index: 3;
-    background-image: url("/assets/backgrounds/background-portfolio.svg");
+    /* background-image: url("/assets/backgrounds/background-portfolio.svg"); */
     background-size: 100%;
     height: 100vh;
     background-repeat: no-repeat;
 }
 
+/* arranging portfolio tab */
+
 .container .page:nth-child(4) {
     grid-column: 1/ 7;
     z-index: 4;
-    background-image: url("/assets/backgrounds/background-about.svg");
+    /* background-image: url("/assets/backgrounds/background-about.svg"); */
     background-size: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -90,7 +71,7 @@ body {
     grid-row: 1 / 2;
     /* margin: 25px; */
     color: #F6DBCD;
-    background: blueviolet;
+    /* background: blueviolet; */
   }
 
   .box {
@@ -103,7 +84,7 @@ body {
   .content:nth-child(1) {
     display: flex;
     align-items: flex-end;
-    background: pink;
+    /* background: pink; */
     grid-column: 1 /2;
     grid-row: 1/2;
   }
@@ -115,7 +96,7 @@ body {
     margin: 0;
     line-height: 1;
     margin-left: 20px;
-    background:orange;
+    /* background:orange; */
   }
   
   /* socials */
@@ -123,7 +104,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: lime;
+    /* background: lime; */
     grid-column: 1 /2;
     grid-row: 2 /3;
   }
@@ -134,7 +115,7 @@ body {
   
   /* blurb */
   .content:nth-child(3) {
-    background: purple;
+    /* background: purple; */
     grid-column: 1 /2;
     grid-row: 3 /4;
   }
@@ -142,7 +123,7 @@ body {
   .content:nth-child(3) p {
     font-size: 16px;
     margin-left: 25px;
-    background: orange;
+    /* background: orange; */
     width: 90%;
   }
   
@@ -151,7 +132,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 350px;
     grid-template-rows: 360px 1fr;
-    background: blue;
+    /* background: blue; */
     grid-column: 2 /3;
     grid-row: 2/4;
   }
@@ -161,7 +142,7 @@ body {
       grid-row: 1 / 3;
       height: 410px;
       z-index: 0;
-      background: orange;
+      /* background: orange; */
   }
 
   .content:nth-child(4) .skills:nth-child(2) {
@@ -174,7 +155,7 @@ body {
     grid-row: 1 / 2;
     z-index: 1;
     font-family: 'Bungee Shade', cursive;
-    background: hotpink;
+    /* background: hotpink; */
   }
 
   .icons img{
@@ -185,7 +166,7 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
       width: 250px;
-      background: lime;
+      /* background: lime; */
   }
   
   /* tab */
@@ -193,11 +174,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: hotpink;
+    /* background: hotpink; */
     grid-column: 3/4;
   }
 
   .content:nth-child(5) p {
-      background: orange;
+      /* background: orange; */
       transform: rotate(-90deg);
   }
