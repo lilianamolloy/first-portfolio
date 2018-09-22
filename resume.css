@@ -51,7 +51,7 @@ body {
 /* about page - grid to place content at the top of the box */
 .resume {
     display: grid;
-    grid-template-columns: 1fr 970px;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 1554px 1fr;
     width: 100%;
     height: 100%;
@@ -68,7 +68,7 @@ body {
   }
 
   /* title */
-  .resume .view .content:nth-child(1) {
+  .content:nth-child(1) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
@@ -133,7 +133,7 @@ body {
 
   hr {
     display: block;
-    width: 750px;
+    width: 75%;
     color: #F6DBCD;
     margin-left: 100px;
     margin-top: 100px;
@@ -210,3 +210,226 @@ body {
 .tab a {
     text-decoration: none;
 }
+
+@media (max-width: 1453px) { /*1*/
+    .content p:nth-child(3) {
+        width: 800px;
+        margin-left: 100px;
+
+    }
+
+    hr {
+        margin-top: 50px;
+    }
+
+    .content:nth-child(4) p {
+        display: none;
+    }
+} 
+
+@media (max-width: 1389px) { /*2*/
+    .content p:nth-child(3) {
+        width: 80%;
+    }
+
+    .container .page:nth-child(4) {
+        background-image: url("/assets/backgrounds/background-about-2500px.svg");
+    }
+    .container .page:nth-child(3) {
+        background-image: url("/assets/backgrounds/background-contact-2500px.svg");
+    }
+    .container .page:nth-child(2) {
+        background-image: url("/assets/backgrounds/background-about-2500px.svg");
+    }
+    .container .page:nth-child(1) {
+        background-image: url("/assets/backgrounds/background-portfolio-2500px.svg");
+    }
+}
+
+@media (max-width: 1213px) { /*3*/
+    .container .page:nth-child(4) {
+        background-image: url("/assets/backgrounds/background-about-3000px.svg");
+    }
+    .container .page:nth-child(3) {
+        background-image: url("/assets/backgrounds/background-contact-3000px.svg");
+    }
+    .container .page:nth-child(2) {
+        background-image: url("/assets/backgrounds/background-about-3000px.svg");
+    }
+    .container .page:nth-child(1) {
+        background-image: url("/assets/backgrounds/background-portfolio-3000px.svg");
+    }
+
+}
+
+@media (max-width: 1085px) { /*4*/
+    .container .page:nth-child(4) {
+        background-image: url("/assets/backgrounds/background-about-4000px.svg");
+    }
+    .container .page:nth-child(3) {
+        background-image: url("/assets/backgrounds/background-contact-4000px.svg");
+    }
+    .container .page:nth-child(2) {
+        background-image: url("/assets/backgrounds/background-about-4000px.svg");
+    }
+    .container .page:nth-child(1) {
+        background-image: url("/assets/backgrounds/background-portfolio-4000px.svg");
+    }
+}
+
+@media (max-width: 973px) { /*5*/
+    .content p:nth-child(3) {
+        width: 60%;
+    } 
+}
+
+@media (max-width: 965px) { /*6*/
+
+    .resume .view .content:nth-child(1) h1 {
+        font-size: 55px;
+        /* background: blue; */
+        margin-top: 100px;
+    }
+
+    .content p:nth-child(2) {
+        width: 70%;
+    } 
+
+    .content p:nth-child(3) {
+        width: 70%;
+    } 
+
+}
+
+@media (max-width: 901px) { /*7*/
+    .resume .view .content:nth-child(1) h1 {
+        font-size: 45px;
+        /* background: blue; */
+        margin-top: 110px;
+    }
+} 
+
+@media (max-width: 893px) { /*8*/
+    .container .page:nth-child(4) {
+        background-image: url("/assets/backgrounds/background-about-5000px.svg");
+    }
+    .container .page:nth-child(3) {
+        background-image: url("/assets/backgrounds/background-contact-5000px.svg");
+    }
+    .container .page:nth-child(2) {
+        background-image: url("/assets/backgrounds/background-about-5000px.svg");
+    }
+    .container .page:nth-child(1) {
+        background-image: url("/assets/backgrounds/background-portfolio-5000px.svg");
+    }
+}
+
+@media (max-width: 829px) { /*9*/
+     /* re-arrange background from grid to flex. background solid color. navigartion blocks at the top of the page */
+
+ body {
+    background:#0A2529;
+    display: flex;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     width: 100%;
+     height:1000px;
+     justify-content: space-between;
+  }
+ 
+  .container .page:nth-child(4) {
+   display: flex;
+   flex-direction: column;
+   background-image: none;
+   background-color: #0A2529;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .container .page:nth-child(3) {
+   background-image: none;
+   background-color: #4F767B;
+   border: 1px solid #D6A892;
+   width: 33%;
+   height: 80px;
+   border-radius:5px;
+ }
+ 
+ .container .page:nth-child(2) {
+   background-image: none;
+   background-color: #0A2529;
+   border: 1px solid #F6DBCD;
+   width: 33%;
+   /* height: 8px; */
+   border-radius:5px;
+ }
+ 
+ .container .page:nth-child(1) {
+   background-image: none;
+   background-color: #F6DBCD;
+   border: 1px solid #4F767B;
+   width: 33%;
+   height: 80px;
+   border-radius:5px;
+ }
+ 
+ /* re arrange tabs at the top */
+ .tab {
+   position: absolute;
+   transform: rotate(90deg);
+   /* background: green; */
+   margin-left: 10%;
+ }
+ 
+  h2 {
+   font-size: 18px;
+   margin-right: 0;
+   /* background: plum; */
+   margin-bottom: 20%;
+ }
+ 
+ /* change content display to flex */
+ .about {
+   display: block;
+ }
+   .view {
+     display: block;
+   }
+ 
+   .box {
+     display: flex;
+   }
+ 
+ }
+
+ @media (max-width: 600px) { /*9*/ 
+    .container .page:nth-child(3) {
+      width: 32%;
+    }
+    
+    .container .page:nth-child(2) {
+      width: 32%;
+    }
+    
+    .container .page:nth-child(1) {
+      width: 32%;
+    }
+
+    .content p:nth-child(2) {
+        width: 80%;
+        margin-left: 10px;
+    } 
+
+    .content p:nth-child(3) {
+        width: 80%;
+        margin-left: 10px;
+    } 
+
+.resume .view .content:nth-child(1) h1 {
+        font-size: 40px;
+        margin-top: 117px;
+    }
+  }
