@@ -226,8 +226,9 @@ button:hover {
     }
 
     .content:nth-child(1) h1 {
-        font-size: 65px;
+        font-size: 50px;
         margin-top: 70px;
+
     }
 
 }
@@ -433,3 +434,14 @@ button:hover {
         margin-top: 100px;
     }
   }
+
+  @media (max-width: 461px) { /*9*/ 
+    textarea {
+        width: 290px;
+        height: 200px;
+    }
+
+    .contact .view .content:nth-child(1) h1  {
+        font-size: 50px;
+    }
+}
