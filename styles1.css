@@ -31,6 +31,10 @@ ul {
   background-repeat: no-repeat;
 }
 
+.page:nth-child(1):hover {
+  opacity: 0.5;
+}
+
 /* background resume */
 .container .page:nth-child(2) {
   grid-column: 5 / 9;
@@ -39,6 +43,9 @@ ul {
   background-image: url("/assets/backgrounds/background-about.svg");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+.page:nth-child(2):hover {
+  opacity: 0.5;
 }
 
 /* portfolio */
@@ -49,6 +56,9 @@ ul {
   background-image: url("/assets/backgrounds/background-portfolio.svg");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+.page:nth-child(3):hover {
+  opacity: 0.5;
 }
 
 /* about */
@@ -167,6 +177,7 @@ ul {
 .icons img{
   margin: 4px;
 }
+
 .icons {
     display: flex;
     flex-wrap: wrap;
@@ -427,23 +438,23 @@ ul {
   }
 }
 
-@media (max-width: 850px) { /*8@@@@@@@@@@@@@@@@@@need to change svg size to 3500*/
+@media (max-width: 850px) { /*8*/
   /* change background size */
   .container .page:nth-child(4) {
-    background-image: url("/assets/backgrounds/background-about-4000px.svg");
+    background-image: url("/assets/backgrounds/background-about-3500px.svg");
     height: 1500px;
   }
 
   .container .page:nth-child(3) {
-    background-image: url("/assets/backgrounds/background-portfolio-4000px.svg");
+    background-image: url("/assets/backgrounds/background-portfolio-3500px.svg");
   }
 
   .container .page:nth-child(2) {
-    background-image: url("/assets/backgrounds/background-about-4000px.svg");
+    background-image: url("/assets/backgrounds/background-about-3500px.svg");
   }
 
   .container .page:nth-child(1) {
-    background-image: url("/assets/backgrounds/background-contact-4000px.svg");
+    background-image: url("/assets/backgrounds/background-contact-3500px.svg");
   }
 }
 
@@ -481,6 +492,10 @@ ul {
   border-radius:5px;
 }
 
+.page:nth-child(3):hover {
+  opacity: 0.5;
+}
+
 .container .page:nth-child(2) {
   background-image: none;
   background-color: #0A2529;
@@ -490,6 +505,10 @@ ul {
   border-radius:5px;
 }
 
+.page:nth-child(2):hover {
+  opacity: 0.5;
+}
+
 .container .page:nth-child(1) {
   background-image: none;
   background-color: #F6DBCD;
@@ -497,6 +516,10 @@ ul {
   width: 33%;
   height: 80px;
   border-radius:5px;
+}
+
+.page:nth-child(1):hover {
+  opacity: 0.5;
 }
 
 /* re arrange tabs at the top */
