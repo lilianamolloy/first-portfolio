@@ -123,7 +123,14 @@ body {
     z-index: 1;
     width: 100%
     /* background: blueviolet; */
-    
+  }
+  .images {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin: 20px;
+      /* border: 1px solid #F6DBCD; */
+      /* width: 400px; */
   }
 
   .content:nth-child(1) img:hover {
